@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/data/2009/2009_本科_1.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/2018/2018_专科_1.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/2018/2018_专科_2.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/2018/2018_本科_1.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/2018/2018_本科_2.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/school.py" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
