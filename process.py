@@ -126,11 +126,11 @@ def save_pred(pred):
     fout.close()
 
 def predict_all(x,y):
-    #get_holt(x, y)
-    simple_mean(x, y)
-    simpleExpSmoothing(x, y)
-    exponentialSmoothing(x, y)
-    linearRegression(x, y)
+    get_holt(x, y)
+    # simple_mean(x, y)
+    # simpleExpSmoothing(x, y)
+    # exponentialSmoothing(x, y)
+    # linearRegression(x, y)
 
 data = read_data('1.csv')
 for name in names:

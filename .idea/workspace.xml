@@ -2,9 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac5035c-6ac2-4843-829e-7d9d3304beea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019获奖表PDF（1）.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paper/基于Python的粮食产量组合预测模型研究及应用_姚缙然.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paper/基于机器学习技术的城市空气质量预测研究_刘新乐.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paper/基于机器学习的武警警务数据研究_周聪.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2013三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2013二等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2013总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2014三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2014二等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2014总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2015三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2015二等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2015总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2016三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2016总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2017三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2017二等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2017总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2018一等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2018三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2018总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2019一等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2019三等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2019二等奖数比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2019总获奖比例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/20_predict_res_rate_exponentialSmoothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/20_predict_res_rate_linearRegression.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/20_predict_res_rate_mean.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/20_predict_res_rate_simpleExpSmoothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/res_rate_exponentialSmoothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/res_rate_holt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/res_rate_linearRegression.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/res_rate_mean.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/res_rate_simpleExpSmoothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/上海数学建模历年获奖情况(已自动还原).xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/res.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,22 +107,30 @@
       <option name="project" value="LOCAL" />
       <updated>1583737143425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20年预测">
+      <created>1583739542005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583739542005</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="各种模型推断及结果输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="各种模型推断及结果输出" />
+    <MESSAGE value="20年预测" />
+    <option name="LAST_COMMIT_MESSAGE" value="20年预测" />
   </component>
   <component name="WindowStateProjectService">
     <state x="852" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583734260585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="852" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583734260585" />
-    <state x="861" y="143" key="CommitChangelistDialog2" timestamp="1583737141241">
+    <state x="861" y="143" key="CommitChangelistDialog2" timestamp="1583739541204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="861" y="143" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583737141241" />
+    <state x="861" y="143" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583739541204" />
     <state width="1899" height="302" key="GridCell.Tab.0.bottom" timestamp="1583739382464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -120,10 +163,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583739382407" />
-    <state x="802" y="282" key="Vcs.Push.Dialog.v2" timestamp="1583737155924">
+    <state x="802" y="282" key="Vcs.Push.Dialog.v2" timestamp="1583739548198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="802" y="282" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583737155924" />
+    <state x="802" y="282" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583739548198" />
     <state x="837" y="333" width="672" height="678" key="search.everywhere.popup" timestamp="1583738773494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
