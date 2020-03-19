@@ -25,7 +25,8 @@ def read_data(filename):
     my_group = data.groupby(data['年份'])[names]
     sum_res = my_group.sum()
     for name in names:
-        data[name + '比例'] = [data[name][i] / sum_res[name][data['年份'][i]] for i in range(140)]
+        data[name + '比例'] = [data[name][i] / sum_res[name][data['年份'][i]]
+                             for i in range(140)]
     return data
 
 
@@ -39,7 +40,8 @@ def plot_line(data, type):
 
     manager = plt.get_current_fig_manager()
     manager.window.showMaximized()
-    plt.subplots_adjust(top=0.962, bottom=0.033, left=0.018, right=0.992, hspace=0.293, wspace=0.190)
+    plt.subplots_adjust(top=0.962, bottom=0.033, left=0.018,
+                        right=0.992, hspace=0.293, wspace=0.190)
     plt.savefig('pic/' + type + '.png')
     plt.show()
 
@@ -55,7 +57,8 @@ def plot_pine(data, type):
         plt.pie(x, labels=labels, explode=explode)
         manager = plt.get_current_fig_manager()
         manager.window.showMaximized()
-        plt.subplots_adjust(top=1, bottom=0, left=0, right=1, hspace=0.2, wspace=0.2)
+        plt.subplots_adjust(top=1, bottom=0, left=0,
+                            right=1, hspace=0.2, wspace=0.2)
         plt.savefig('pic/' + str(years[i]) + type + '.png')
         plt.ion()
         plt.pause(1)
@@ -69,7 +72,7 @@ def get_dataset(data, type):
 
 
 # 霍尔特(Holt)线性趋势法
-def get_holt(x, y,save_fn):
+def get_holt(x, y, save_fn):
     pred = []
     for data in x:
         r2 = Holt(data).fit(smoothing_level=0.3, smoothing_slope=0.1)
@@ -78,31 +81,33 @@ def get_holt(x, y,save_fn):
 
 
 # 简单平均法
-def simple_mean(x, y,save_fn):
+def simple_mean(x, y, save_fn):
     pred = np.array([data.mean() for data in x])
     save_fn('rate_mean.txt', pred, y)
 
 
 # 简单指数平滑法
-def simpleExpSmoothing(x, y,save_fn):
+def simpleExpSmoothing(x, y, save_fn):
     pred = []
     for data in x:
-        fit = SimpleExpSmoothing(data).fit(smoothing_level=0.6, optimized=False)
+        fit = SimpleExpSmoothing(data).fit(
+            smoothing_level=0.6, optimized=False)
         pred.append(fit.forecast(1))
     save_fn('rate_simpleExpSmoothing.txt', np.array(pred), y)
 
 
 # Holt-Winters季节性预测模型
-def exponentialSmoothing(x, y,save_fn):
+def exponentialSmoothing(x, y, save_fn):
     pred = []
     for data in x:
-        fit = ExponentialSmoothing((data), seasonal_periods=3, trend='add', seasonal='add', ).fit()
+        fit = ExponentialSmoothing(
+            (data), seasonal_periods=3, trend='add', seasonal='add', ).fit()
         pred.append(fit.forecast(1))
     save_fn('rate_exponentialSmoothing.txt', np.array(pred), y)
 
 
 # 逻辑回归
-def linearRegression(x, y,save_fn):
+def linearRegression(x, y, save_fn):
     lr = LinearRegression().fit(x, y)
     pred = lr.predict(x)
     save_fn('rate_linearRegression.txt', pred, y)
@@ -110,41 +115,44 @@ def linearRegression(x, y,save_fn):
 
 # 计算均方差并保存文件
 def save_res(name, pred, y):
-    pred=np.clip(pred,a_min=0,a_max=1.)
+    pred = np.clip(pred, a_min=0, a_max=1.)
     fout = open('./res/'+name, 'a')
-    acc = np.sqrt(np.square(pred - y).sum())
+    acc = np.sqrt(np.square(pred - y).mean())
     for i in range(len(pred)):
-        fout.write('pred:%.2f\treal:%.2f\n' % (pred[i], y[i]))
+        fout.write('pred:%.3f\treal:%.2f\n' % (pred[i], y[i]))
     fout.write('acc:%.4f\n\n' % acc)
     fout.write('\n')
     fout.close()
 
 
 def save_20_pred(name, pred, y):
-    pred=np.clip(pred,a_min=0.,a_max=1.)
+    pred = np.clip(pred, a_min=0., a_max=1.)
     fout = open('./res/'+'20_predict_'+name, 'a')
     for i in range(len(pred)):
-        fout.write('pred:%.2f\n' % pred[i])
+        fout.write('pred:%.3f\n' % pred[i])
     fout.write('\n')
     fout.close()
+
 
 def predict_20(train_data):
     x = train_data
     y = train_data[:, -1]
-    get_holt(x[:,1:], y,save_20_pred)
-    simple_mean(x, y,save_20_pred)
-    simpleExpSmoothing(x, y,save_20_pred)
-    exponentialSmoothing(x, y,save_20_pred)
-    linearRegression(x, y,save_20_pred)
+    get_holt(x[:, 1:], y, save_20_pred)
+    simple_mean(x, y, save_20_pred)
+    simpleExpSmoothing(x, y, save_20_pred)
+    exponentialSmoothing(x, y, save_20_pred)
+    linearRegression(x, y, save_20_pred)
+
 
 def predict_all(train_data):
     x = train_data[:, :-1]
     y = train_data[:, -1]
-    get_holt(x, y,save_res)
-    simple_mean(x, y,save_res)
-    simpleExpSmoothing(x, y,save_res)
-    exponentialSmoothing(x, y,save_res)
-    linearRegression(x, y,save_res)
+    get_holt(x, y, save_res)
+    simple_mean(x, y, save_res)
+    simpleExpSmoothing(x, y, save_res)
+    exponentialSmoothing(x, y, save_res)
+    linearRegression(x, y, save_res)
+
 
 if not os.path.exists('res'):
     os.mkdir('res')
@@ -153,4 +161,3 @@ for name in names:
     train_data = get_dataset(data, name + '比例')
     predict_all(train_data)
     predict_20(train_data)
-

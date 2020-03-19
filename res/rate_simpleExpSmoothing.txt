@@ -1,46 +1,92 @@
-pred:0.12	real:0.21
-pred:0.21	real:0.15
-pred:0.19	real:0.13
-pred:0.08	real:0.05
-pred:0.06	real:0.07
-pred:0.03	real:0.01
-pred:0.11	real:0.11
-pred:0.02	real:0.02
-pred:0.03	real:0.05
-pred:0.01	real:0.01
-pred:0.05	real:0.09
-pred:0.02	real:0.05
-pred:0.00	real:0.00
-pred:0.04	real:0.02
-pred:0.01	real:0.01
-pred:0.00	real:0.00
-pred:0.01	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
+pred:0.120	real:0.21
+pred:0.211	real:0.15
+pred:0.187	real:0.13
+pred:0.082	real:0.05
+pred:0.058	real:0.07
+pred:0.035	real:0.01
+pred:0.106	real:0.11
+pred:0.017	real:0.02
+pred:0.032	real:0.05
+pred:0.008	real:0.01
+pred:0.054	real:0.09
+pred:0.020	real:0.05
+pred:0.005	real:0.00
+pred:0.044	real:0.02
+pred:0.008	real:0.01
+pred:0.003	real:0.00
+pred:0.006	real:0.00
+pred:0.004	real:0.00
+pred:0.001	real:0.00
+pred:0.000	real:0.00
 acc:0.0844
 
 
-pred:0.09	real:0.12
-pred:0.24	real:0.15
-pred:0.26	real:0.26
-pred:0.05	real:0.07
-pred:0.02	real:0.04
-pred:0.05	real:0.03
-pred:0.06	real:0.10
-pred:0.03	real:0.04
-pred:0.03	real:0.03
-pred:0.01	real:0.01
-pred:0.00	real:0.00
-pred:0.02	real:0.04
-pred:0.01	real:0.02
-pred:0.08	real:0.06
-pred:0.02	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
-pred:0.00	real:0.00
+pred:0.094	real:0.12
+pred:0.241	real:0.15
+pred:0.262	real:0.26
+pred:0.050	real:0.07
+pred:0.023	real:0.04
+pred:0.046	real:0.03
+pred:0.063	real:0.10
+pred:0.033	real:0.04
+pred:0.031	real:0.03
+pred:0.015	real:0.01
+pred:0.004	real:0.00
+pred:0.019	real:0.04
+pred:0.010	real:0.02
+pred:0.078	real:0.06
+pred:0.016	real:0.00
+pred:0.002	real:0.00
+pred:0.004	real:0.00
+pred:0.003	real:0.00
+pred:0.004	real:0.00
+pred:0.002	real:0.00
 acc:0.0968
+
+
+pred:0.101	real:0.13
+pred:0.150	real:0.14
+pred:0.201	real:0.18
+pred:0.091	real:0.08
+pred:0.039	real:0.05
+pred:0.038	real:0.05
+pred:0.090	real:0.10
+pred:0.035	real:0.03
+pred:0.028	real:0.04
+pred:0.015	real:0.01
+pred:0.012	real:0.03
+pred:0.037	real:0.04
+pred:0.031	real:0.04
+pred:0.070	real:0.05
+pred:0.017	real:0.01
+pred:0.007	real:0.00
+pred:0.007	real:0.00
+pred:0.023	real:0.02
+pred:0.005	real:0.01
+pred:0.003	real:0.00
+acc:0.0709
+
+
+pred:0.101	real:0.14
+pred:0.186	real:0.14
+pred:0.218	real:0.20
+pred:0.076	real:0.08
+pred:0.037	real:0.05
+pred:0.041	real:0.04
+pred:0.084	real:0.10
+pred:0.032	real:0.03
+pred:0.030	real:0.04
+pred:0.014	real:0.01
+pred:0.016	real:0.03
+pred:0.029	real:0.04
+pred:0.021	real:0.03
+pred:0.069	real:0.05
+pred:0.016	real:0.01
+pred:0.005	real:0.00
+pred:0.006	real:0.00
+pred:0.014	real:0.01
+pred:0.004	real:0.00
+pred:0.002	real:0.00
+acc:0.0790
 
 
